@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Escape from Gollum</string>
+
+    <string name="carafruta">FrutiMatica</string>
+    <string name="nombre">Ingresa tu nombre</string>
+    <string name="jugar">Jugar</string>
+
+    <string name="record"></string>
+    <string name="tv_nombre">NOMBRE DEL JUGADOR</string>
+    <string name="score">Nivel:0</string>
+    <string name="manzanas">Manzanas:</string>
+    <string name="respuesta">Respuesta</string>
+    <string name="comprobar">COMPROBAR</string>
+    <string name="salir">Salir</string>
+</resources>

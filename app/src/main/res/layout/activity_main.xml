@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:id="@+id/rView"
+    tools:context=".MainActivity">
+
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+    android:id="@+id/goldUp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="-3dp"
+    android:contentDescription="@string/app_name"
+    android:src="@drawable/splashgold"
+    tools:overrideLibrary="pl.droidsonroids.gif" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/goldDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/particles"
+        tools:overrideLibrary="pl.droidsonroids.gif" />
+
+    <TextView
+        android:id="@+id/nombreDeDatos"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/editTextTextPersonName"
+        android:background="@android:drawable/zoom_plate"
+        android:fontFamily="@font/tolkien"
+        android:gravity="center_horizontal|center_vertical"
+        android:scaleType="fitXY"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:shadowDx="5"
+        android:shadowDy="3"
+        android:shadowRadius="1"
+        android:singleLine="true"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D3CCBE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:background="?android:attr/fastScrollTrackDrawable"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="textPersonName"
+        android:text="Developed by MG Pro Solutions"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/menu_central"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button8a"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/Ingresar_nombre"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/tabla"
+                android:ems="10"
+
+                android:fontFamily="@font/tolkien"
+                android:gravity="center_horizontal|center_vertical"
+
+                android:hint="Tu nombre"
+                android:inputType="textPersonName"
+                android:maxLength="12"
+                android:selectAllOnFocus="false"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="5"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:soundEffectsEnabled="true"
+                android:textColor="#FFEB3B"
+                android:textColorHighlight="#FFEB3B"
+                android:textColorHint="#FFEB3B"
+                android:textColorLink="#FFEB3B"
+                android:textCursorDrawable="@android:drawable/stat_sys_download_done"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/Boton_jugar"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/tabla"
+                android:fontFamily="@font/tolkien"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:onClick="jugar"
+                android:scaleType="fitXY"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="5"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:soundEffectsEnabled="true"
+                android:text="Nuevo Juego"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#D3CCBE"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/continuar"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/tabla"
+                android:fontFamily="@font/tolkien"
+                android:onClick="continuar"
+                android:scaleType="fitXY"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="5"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:soundEffectsEnabled="true"
+                android:text="Continuar"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#D3CCBE"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button3a"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/Boton_salir"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/tabla"
+                android:fontFamily="@font/tolkien"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:onClick="salir"
+                android:scaleType="fitXY"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowDx="5"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:soundEffectsEnabled="true"
+                android:text="Salir"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#D3CCBE"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
